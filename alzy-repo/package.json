@@ -1,0 +1,35 @@
+{
+  "name": "alzy-marketplace",
+  "version": "1.0.0",
+  "description": "ALZY — Eswatini's agriculture & food marketplace. Farm-fresh produce, wholesale supply, packaging and private label, delivered.",
+  "main": "server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node db/seed.js",
+    "reset": "node db/seed.js --force",
+    "test": "node tests/api.test.js",
+    "test:e2e": "node tests/e2e.mjs"
+  },
+  "keywords": [
+    "marketplace",
+    "agriculture",
+    "eswatini",
+    "farmers",
+    "food",
+    "ecommerce",
+    "alzy"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "playwright": "^1.64.1"
+  }
+}
